@@ -1,0 +1,504 @@
+/* --- --------Google Fonts------------ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+*
+{
+   
+   cursor: url('https://www.pixelliongroup.com/img/cursor.png'), auto;
+}
+body{
+    font-family: 'Roboto Mono'; background-color: #222;
+}
+a{    text-decoration: none;color:#9c9c9c;  }
+a:hover{cursor: pointer;text-decoration: none;color:#9c9c9c;}
+
+.b{    border:1px solid red;    }
+.or{    color: rgb(175, 95, 41);    }
+.txt-sha{  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);}
+.cm
+
+/*---------------------------------------------------- header SEsSion-------------------  */
+
+
+.head-part
+{
+    background-color: #222;
+    height:100vh;
+    width: 100%;
+    color:#fff;  
+         
+}
+.navbar{    margin: 0 auto;font-family: 'Roboto Mono';  }
+.link-active img
+{  
+    width: 12vw;
+    height:8vh;    
+}
+
+/* terminal */
+.terminal
+{
+    width:30vw;
+    height:35vh;
+    color: #333;       
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       
+}
+
+.hero-title{    font-size: 3em; font-family: 'Roboto Mono';font-weight: 100; }
+.btn-hero
+{  
+   border:1px solid rgb(204, 92, 17);
+   background: transparent;
+   color:#eee;
+   border-radius: 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-hero:hover
+{
+   border-color:#333;
+   color: rgb(204, 92, 17);
+   background-color:#222;
+   transition: all 0.7s ease-in-out;
+   box-shadow: 0 4px 8px 0 rgba(219, 163, 58, 0.2), 0 6px 20px 0 rgba(223, 120, 24, 0.19);
+}
+
+
+
+/* ---------------------------------------Body Section------------------------- */
+
+
+
+
+.iconbox{  background:#222;background: linear-gradient(to right bottom, #222 50%, rgb(228, 223, 218) 50%); }
+.iconbox1{   background:rgb(228, 223, 218);  }
+.iconbox2{   background:#222;   }
+.iconbox3{  background:#222;background: linear-gradient(to left bottom, #222 50%, rgb(228, 223, 218) 50%); }
+
+/* vector image */
+.rmx  
+{
+  height: 400px;
+  width:500px;
+}
+
+.item-card{  background-color: transparent;  border:0;}
+.item-card:hover
+{
+  box-shadow: 0 4px 8px 0 rgba(219, 163, 58, 0.2), 0 6px 20px 0 rgba(223, 120, 24, 0.19);
+  transform: scaleY(1.05);
+  transition: all 0.5s ease-in-out;
+
+}
+.item-card:hover i
+{
+  color: rgb(190, 121, 42);
+  transition: all 0.5s ease-in-out;  
+}
+.item-card:hover h5
+{
+  color: rgb(85, 49, 8);  
+  transition: all 0.5s ease-in-out;  
+}
+.icobox
+{
+  width: 75%;
+  margin:0 auto;
+}
+
+/* ---------------------------------------------Exe Members----------------------------- */
+
+
+li {
+  list-style: none;
+}
+
+
+/* style member component */
+.list-members {
+  background: #f08000a4;
+  width: 80%;
+  margin: 4% auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.member-image {
+  width: 50%;
+  height: 100%;  
+  overflow: hidden;
+  position: relative;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.member-image:hover img {
+  transform: scale(1.1);
+  opacity: 0.75;
+}
+
+.member-info {
+  width: 50%;
+  text-align: center;
+}
+
+.member-info p {
+  margin: 20px 0;
+}
+
+
+/* style social link */
+.social-link .fab {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #000;
+  margin: 0 7px;
+  cursor: pointer;
+  transition: transform .5s;
+}
+
+.social-link .fab:hover {
+  background: #000;
+  color: #6d3e08;
+  transform: translateY(-7px);
+}
+
+/* Membuat segitiga */
+.member-image::after {
+  content: '';
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 15px solid #ffe501;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+
+/* Merubah posisi member-image dengan member-info */
+@media screen and (min-width: 771px) {
+  .member:nth-child(4n+3) .member-info,
+  .member:nth-child(4n+4) .member-info {
+    order: 1;
+  }
+  .member:nth-child(4n+3) .member-image,
+  .member:nth-child(4n+4) .member-image {
+    order: 2;
+  }
+
+  /* Merubah posisi sigitiga pada baris genap */
+  .member:nth-child(4n+3) .member-image::after,
+  .member:nth-child(4n+4) .member-image::after {
+    left: 0;
+    right: auto;
+    transform: translateY(-50%) rotateZ(180deg);
+  }
+}
+
+
+/* Mobile Styles */
+@media screen and (max-width: 770px) {
+  .list-members {
+    width: 95%;
+  }
+  .member {
+    flex-basis: 100%;
+    font-size: 14px;
+  }
+  .social-link .fab {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .member:nth-child(even) .member-info {
+    order: 1;
+  }
+  .member:nth-child(even) .member-image {
+    order: 2;
+  }
+  
+  /* Merubah posisi sigitiga elemen genap */
+  .member:nth-child(even) .member-image::after {
+    left: 0;
+    right: auto;
+    transform: translateY(-50%) rotateZ(180deg);
+  }
+}
+
+/* ----------------------------------------------------------FEATURED EVENTS ----------------------------------- */
+.febox
+{
+  margin: 10% auto;
+  width:75vw;
+  background: transparent;    
+
+}
+.fecont{ background-color: rgb(219, 203, 188); }
+.febol{border-top-left-radius: 5%;border-bottom-left-radius: 5%;}
+.febor{border-top-right-radius: 5%;border-bottom-right-radius: 5%;}
+.fem{margin: 10% auto;}
+
+.feimg
+{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  opacity: 0.75;
+}
+.feimg1
+{
+  
+  width: 40vw;
+  height: 60vh;
+  object-fit: cover;  
+  opacity: 0.75;
+  
+}
+.feimg1:hover{opacity: 1;transition: all 0.3s ease-in-out;}
+.feh1
+{
+  font-size:60px;
+  font-weight: 800;
+  color:rgb(37, 28, 23); 
+  font-family: 'Barlow', sans-serif;
+
+
+}
+@supports (-webkit-text-stroke: 1px rgb(236, 113, 12)) {
+  .fefill {
+    -webkit-text-stroke: 0.1px rgb(2, 2, 2);
+    -webkit-text-fill-color: rgb(231, 208, 192);
+    letter-spacing:  0.25em;
+  }
+}
+
+.febut
+{
+  background-color: transparent;
+  border: 1px solid #333;
+  padding:10px;
+  border-radius: 10px;
+}
+.febut:hover{background-color: #333;color:#eee;transition: all 0.5s ease-in-out;}
+.febutt:hover{transform: scale(1.10);transition: all 0.5s ease-in-out;color:#b98850}
+
+.febutt
+{
+  background-color:transparent;
+  border: 1px solid #333;
+  color: rgb(180, 178, 178);
+  padding:10px 20px;
+  border-radius: 10px;
+
+}
+.feroall
+{
+  border-radius: 5%;
+  
+  margin: 10vh 0;
+}
+.feroallr
+{
+  border-radius: 5%;
+  
+  margin: 10vh 0;
+}
+
+
+/* ---------------------------------------Footer Section------------------------------- */
+.foot
+{
+  color:#ddd;
+}
+.foot-img
+{
+  width: 10vw;
+  height:8vh;
+  
+}
+.foot .fab{ padding: 3%; border-radius: 50%; background-color: rgba(236, 103, 14, 0.247);}
+
+
+/* sidenav  */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+/* --------------------------Animations CSS------------------ */
+
+.hideme{    opacity:0;  }
+.blink
+{
+  animation:blink 1.2s infinite;
+}
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.fade-in {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+ /* scrollbar */
+ body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(148, 123, 102);
+  outline: 1px solid slategrey;
+}
+
+/* sidenav */
+.hambur
+{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding :1.5em 0.5em;
+  color: #944700;
+  font-size:40px;
+  cursor: pointer;
+  
+}
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

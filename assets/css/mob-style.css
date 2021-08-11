@@ -1,0 +1,18 @@
+@media screen and (max-width: 600px)
+{
+    
+    .hero-title,.feh1{    font-size: 30px ; }
+    .mflex{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .febor{border-radius: 5%;}
+    .mhide{display: none !important;}
+    .iconbox{  background:#222;background: linear-gradient(to right bottom, #222 50%, rgb(228, 223, 218) 0%); }
+
+    .feimg1
+    {
+        width:55vw;
+    }
+}
