@@ -12,7 +12,7 @@ JQuery Terminal
 AOS Animation
 Bootstrap icons
 Font Awesome Icons
-
+Smooth Scroll polyfills
 ### svg:
 
 w3.org
