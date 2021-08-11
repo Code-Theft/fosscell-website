@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="theme-color" content="#9d4edd">
+    <link rel="icon" href="assets/logo/foss light (1).jpg">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
@@ -17,6 +19,7 @@
     
     
     
+    
 
     <title>Foss Cell Geci</title>
   </head>
@@ -24,12 +27,12 @@
 
     <div class="head-part    ">
         <!-- navbar -->
-        <div class="navbar d-flex justify-content-around w-100 p-5">
-            <div class="px-3"><a href="https://icfoss.in/home">ICFOSS</a></div>
-            <div class="px-"><a href="#about">About Us</a></div>
-            <div class="px-3"><a href="index.html" class="link-active "><img src="assets/logo/foss light.png"   ></a></div>      
-            <div class="px-3"><a href="events.html">Events</a></div> 
-            <div class="px-3"><a href="#exe">Contact</a></div>             
+        <div class="navbar d-flex justify-content-between w-100 p-5 ">
+            <div><a href="https://icfoss.in/home">ICFOSS</a></div>
+            <div><a href="#about" data-scroll>About Us</a></div>
+            <div><a href="index.html" ><img src="assets/logo/foss light.png" class="link-active "  ></a></div>      
+            <div><a href="events.html">Events</a></div> 
+            <div><a href="#exe" data-scroll>Contact</a></div>             
         </div>
         <!-- hamburger sidenavr -->
         <div >
@@ -37,9 +40,9 @@
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="https://icfoss.in/home">ICFOSS</a>
-                <a href="#about">About Us</a>
+                <a href="#about" data-scroll>About Us</a>
                 <a href="events.html">Events</a>
-                <a href="#exe">Contact</a>
+                <a href="#exe"data-scroll>Contact</a>
             </div>
             <script>
                 function openNav() {
@@ -80,6 +83,7 @@
         </div>
         
     </div>
+    <div id="about"></div>
     <!-- ---------------About US------------- -->
     <div class="iconbox  p-3 ">
         <div class="text-center text-white-50  hero-title p-3 m-1">
@@ -117,8 +121,8 @@
         </div>
         <!-- icons boxes -->
         <div class="py-5  m-0">
-            <div class="row py-5 icobox hideme ">
-                <div class="col-md-3 m-0  p-0  ">
+            <div class="row py-5 icobox  ">
+                <div class="col-md-3 m-0  p-0  hideme ">
                     <div class="card item-card card-block text-center pb-3   ">                  
                         <i class="far fa-lightbulb fa-5x py-5 "></i>
                         <h5 class="item-card-title ">Aware</h5>
@@ -126,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 m-0  p-0">
+                <div class="col-md-3 m-0  p-0 hideme">
                     <div class="card item-card card-block text-center pb-3 ">                  
                         <i class="fas fa-chalkboard-teacher fa-5x py-5"></i>
                         <h5 class="item-card-title ">Promote</h5>
@@ -134,7 +138,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 m-0  p-0">
+                <div class="col-md-3 m-0  p-0 hideme">
                     <div class="card item-card card-block text-center pb-3 ">                  
                         <i class="fas fa-project-diagram fa-5x py-5"></i>
                         <h5 class="item-card-title ">Support</h5>
@@ -142,7 +146,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 m-0  p-0">
+                <div class="col-md-3 m-0  p-0 hideme">
                     <div class="card item-card card-block text-center pb-3 ">                  
                         <i class="fas fa-code fa-5x py-5"></i>
                         <h5 class="item-card-title ">Conduct</h5>
@@ -163,13 +167,13 @@
             <span class="or">Events</span>
             
         </div>
-        <div class="febox hideme">
+        <div class="febox ">
             <div class="d-flex borr mflex">
                 <div >
-                    <img src="assets/img/events/hacktober.jpg" class="febol feimg" >
+                    <img src="assets/img/events/hacktober.jpg" class="febol feimg " >
                 </div>
 
-                <div class="fecont febor ">
+                <div class="fecont febor  hideme">
                     <div class="w-75 fem pt-5 ">
                         <div>
                             <h1 class="feh1">
@@ -216,10 +220,7 @@
 
         </div>
     </div>  
-    
-
-
-
+    <div id="exe"></div>
     <!-- execom -->
     <div class="iconbox1 m-0">
         <div class="text-center text-black-50  hero-title py-3  mt-5 ">
@@ -232,7 +233,7 @@
             <ul class="list-members py-3 ">
                 <li class="member hideme" >
                     <div class="member-image">
-                        <img src="assets/img/exe/staff.png">
+                        <img src="assets/img/exe/staff.jpg">
                     </div>
                     <div class="member-info">
                         <h3>Ratheesh T K </h3>
@@ -257,29 +258,31 @@
                         <p> Co-Ordinator</p> 
                         
                         <div class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <!-- phone -->
-                            
-                            
+                            <a href="https://www.linkedin.com/in/sarannya-nair-866601213">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="tel:+919188227045">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>                        
                         </div>
                     </div>
                 </li>
     
                 <li class="member hideme">
                     <div class="member-image">
-                        <img src="assets/img/exe/akshay.jpg">
+                        <img src="assets/img/exe/sruthy.jpeg">
                     </div>
                     <div class="member-info">
                         <h3>Sruthymol K S </h3>
                         <p> Co-Ordinator</p> 
                         
                         <div class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <!-- phone -->
-                            
-                            
+                            <a href="https://www.linkedin.com/in/sruthy-sudheer-70b5a81b2">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="tel:+919188837549">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>                        
                         </div>
                     </div>
                 </li>
@@ -293,29 +296,31 @@
                         <p> CS Dept Co-Ordinator</p> 
                         
                         <div class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <!-- phone -->
-                            
-                            
+                            <a href="https://www.linkedin.com/in/sruthy-sudheer-70b5a81b2">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="tel:+918157838307">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>                        
                         </div>
                     </div>
                 </li>
     
                 <li class="member hideme">
                     <div class="member-image">
-                        <img src="assets/img/exe/cs.jpg">
+                        <img src="assets/img/exe/ec.jpeg">
                     </div>
                     <div class="member-info">
                         <h3>Ardra S S</h3>
                         <p> EC Dept Co-Ordinator</p> 
                         
                         <div class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <!-- phone -->
-                            
-                            
+                            <a href="https://www.linkedin.com/in/ardra-ss-05b67b1b3">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="tel:+919400198167">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>                        
                         </div>
                     </div>
                 </li>
@@ -328,48 +333,44 @@
                         <h3>Vidya S</h3>
                         <p> EEE Dept Co-Ordinator</p> 
                         
-                        <div class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <!-- phone -->
-                            
-                            
-                        </div>
+                        81578 38307
                     </div>
                 </li>
     
                 <li class="member hideme">
                     <div class="member-image">
-                        <img src="assets/img/exe/cs.jpg">
+                        <img src="assets/img/exe/it.jpeg">
                     </div>
                     <div class="member-info">
                         <h3>Niranjana K</h3>
                         <p> IT Dept Co-Ordinator</p> 
                         
                         <div class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <!-- phone -->
-                            
-                            
+                            <a href="https://www.linkedin.com/in/niranjana-k-7509521aa">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="tel:+918330080425">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>                        
                         </div>
                     </div>
                 </li>
     
                 <li class="member hideme">
                     <div class="member-image">
-                        <img src="assets/img/exe/cs.jpg">
+                        <img src="assets/img/exe/mech.jpg">
                     </div>
                     <div class="member-info">
                         <h3>M Dilshad</h3>
                         <p> MECH  Dept Co-Ordinator</p> 
                         
                         <div class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <!-- phone -->
-                            
-                            
+                            <a href="https://www.linkedin.com/in/mohamed-dilshad-m-03152b1ba">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="tel:+918157809819">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>                        
                         </div>
                     </div>
                 </li>
@@ -383,29 +384,31 @@
                         <p> CAMPUS AMBASSADOR</p> 
                         
                         <div class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <!-- phone -->
-                            
-                            
+                            <a href="https://www.linkedin.com/in/sarannya-nair-866601213">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="tel:+919188227045">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>                        
                         </div>
                     </div>
                 </li>
     
                 <li class="member hideme">
                     <div class="member-image">
-                        <img src="assets/img/exe/camp1.jpeg">
+                        <img src="assets/img/exe/camp2.jpeg">
                     </div>
                     <div class="member-info">
                         <h3>Sarannya</h3>
                         <p> CAMPUS AMBASSADOR</p> 
                         
                         <div class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <!-- phone -->
-                            
-                            
+                            <a href="https://www.linkedin.com/in/sarannya-nair-866601213">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="tel:+919188227045">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>                        
                         </div>
                     </div>
                 </li>
@@ -415,13 +418,14 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#222222" fill-opacity="1" d="M0,224L60,224C120,224,240,224,360,208C480,192,600,160,720,154.7C840,149,960,171,1080,154.7C1200,139,1320,85,1380,58.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </div>
 
+    <!-- ----------------------------foooter------------- -->
     <div class="iconbox2 ">
-        <div class="navbar d-flex justify-content-around w-100 py-5 ">
-            <div class="px-3"><a href="https://icfoss.in/home">ICFOSS</a></div>
-            <div class="px-"><a href="#about">About Us</a></div>
-            <div class="px-3"><a href="index.html" class="link-active ">Home</a></div>      
-            <div class="px-3"><a href="events.html">Events</a></div> 
-            <div class="px-3"><a href="#exe">Contact</a></div>             
+        <div class="navbar d-flex justify-content-between w-100 pt-5">
+            <div ><a href="https://icfoss.in/home">ICFOSS</a></div>
+            <div ><a href="#about" data-scroll>About Us</a></div>
+            <div ><a href="index.html" >Home</a></div>      
+            <div ><a href="events.html">Events</a></div> 
+            <div ><a href="#exe" data-scroll>Contact</a></div>             
         </div>
 
         <div class="w-50 foot mx-auto d-block ">
@@ -452,7 +456,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="assets/js/sroll.js"></script> -->
     <script src="assets/js/terminal.js" type="text/javascript"></script>
+    
 
     <!-- Scripts -->
     <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
@@ -468,5 +474,21 @@
         );
         term.clear().echo('FOSS CELL GECI').echo('[[ send hello ]]');
     </script>
+
+    <!-- smooth scroll -->
+
+    <!-- Always get the latest version -->
+    <!-- Not recommended for production sites! -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>    
+    <!-- Get patch fixes within a minor version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>  
+    <!-- Get a specific version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
 </body>
 </html>

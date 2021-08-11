@@ -7,6 +7,12 @@
         flex-direction: column;
         
     }
+    .link-active,.foot-img
+    {
+        width: 25vw;
+        height:10vh;
+
+    }
     .febor{border-radius: 5%;}
     .mhide{display: none !important;}
     .iconbox{  background:#222;background: linear-gradient(to right bottom, #222 50%, rgb(228, 223, 218) 0%); }
@@ -14,5 +20,10 @@
     .feimg1
     {
         width:55vw;
+    }
+    .navbar 
+    {
+        display: flex;
+        justify-content:start;
     }
 }

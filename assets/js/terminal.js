@@ -25,18 +25,4 @@
       });
       
   });
-// darkmode();
 
-function darkmode()
-{
-    var testDiv = document.querySelector(".iconbox1");
-    
-    // demoDiv.innerHTML = "offsetLeft: " + testDiv.offsetLeft + "<br>offsetTop: " + testDiv.offsetTop;
-    if(testDiv.offsetTop <= 10)
-    {
-        document.querySelector(".hambur").style.color = "red";
-    }
-    else{
-        document.querySelector(".hambur").style.color = "green";
-    }
-}
